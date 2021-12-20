@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN FORM</title>
+<style type="text/css">
+
+td{
+border: 2px solid blue;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var name=document.getElementById("txtname").value;
+var password=document.getElementById("txtpass").value;
+if(name==""|| password=="")
+alert("PLEASE ENTER REQUIRED DATA");
+else if ( name!="angel" && password == "i")
+alert("WRONG UserName");
+else if (password!="i" && name == "angel")
+alert("WRONG PASSWORD");
+else if (name!="angel"&& password!="i")
+alert("WRONG USERNAME AND PASSWORD");
+else
+alert("WELCOME DEAR "+name);
+
+}
+
+</script>
+</head>
+<body>
+<form name="login" action="" method="text">
+<table style="text-align: center;">
+<tr> <td colspan="2">LOGIN FORM</td></tr>
+<tr>
+<td>UserName</td>
+<td><input type="text" id="txtname" name="textname"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td colspan="2"><input type="password" id="txtpass" name="textpass"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value="LOGIN" onclick="validate();"></td>
+</tr>
+<tr>
+<td colspan="2"> <input type="RESET" value="RESET"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
